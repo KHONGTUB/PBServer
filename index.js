@@ -9,7 +9,7 @@ require("dotenv/config");
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(`${process.env.MONGO_URI}`);
 
 const db = mongoose.connection;
 db.on("error", (error) => console.log(error));
