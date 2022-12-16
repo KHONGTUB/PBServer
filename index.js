@@ -4,7 +4,7 @@ const app = express();
 const userRouter = require("./routes/usersRoutes");
 const recordRouter = require("./routes/userRecordRoutes");
 const cors = require("cors");
-require("dotenv/config");
+require("dotenv").config();
 
 app.use(express.json());
 app.use(cors());
