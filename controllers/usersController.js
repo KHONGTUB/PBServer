@@ -2,7 +2,7 @@ const User = require("../models/users");
 const record = require("../models/userRecord");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-require("dotenv/config");
+require("dotenv").config();
 
 function authenticateToken(req, res, next) {
   const authHeader = req.headers.authorization;
